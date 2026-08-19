@@ -489,7 +489,7 @@ function renderAST(originalNode) {
     let svgWidth = (bounds.maxX - bounds.minX) + (padX * 2) + 60; 
     let svgHeight = (bounds.maxY - bounds.minY) + (padY * 2);
 
-    let svg = `<svg width="${svgWidth}" height="${svgHeight}" style="max-width: 100%; height: auto;" xmlns="http://www.w3.org/2000/svg">`;
+    let svg = `<svg width="${svgWidth}" height="${svgHeight}" xmlns="http://www.w3.org/2000/svg">`;
     svg += drawConnections(node);
     svg += drawNodes(node);
     
